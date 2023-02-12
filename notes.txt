@@ -1,0 +1,26 @@
+Inheritance is also called is -a relationship.
+By using extends keyword we can implement inheritance.
+The main advantage is code re-usability.
+
+Method overloading:
+ writing multiple methods with same name but different arguments with in the same class.
+
+Method overriding:
+rewriting parent class method into the child class.
+
+Rules for method overloading:
+1. method name and arguments should match while overriding.
+2. private methods and static methods are not allowed to override.
+
+Difference:
+Property                Method Overloading                  method overriding
+==============================================================================
+1. Method names :           same                                same
+2. arguments                different                           same
+3. signature                different                           same
+4. return types             different                           co-variant ( u can replace return type with child)
+5. private/final/static     can be overload                     cant override.
+6. example for              compile time polymorphism           runtime polymorphism
+7. also                     static polymorphism                 dynamic polymorphism
+
+

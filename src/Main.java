@@ -9,7 +9,7 @@ public class Main {
         dog.walk();
         System.out.println(dog.name);
         System.out.println(dog.type);
-        System.out.println(dog.);
+        //System.out.println(dog.);
 
     }
 }
