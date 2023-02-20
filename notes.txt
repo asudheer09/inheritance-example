@@ -24,3 +24,139 @@ Property                Method Overloading                  method overriding
 7. also                     static polymorphism                 dynamic polymorphism
 
 
+Child child= new Child()
+
+---> child object can access both parent class methods and child class methods.
+
+Parent parent = new Parent();
+
+---> parent object can access only parent class methods not child class methods.
+
+Parent parent= new Child();
+
+---> Normally parent object can access only parent class methods,but if we override
+parent class methods in the child class then child class method will be called.
+
+Single Inheritance: extending only one class.
+
+        A
+        |
+        B
+
+ class A{
+
+ }
+class B extends A{
+
+}
+
+Multi-level Inheritance:
+
+        A
+        |
+        B
+        |
+        C
+  class A{
+
+  }
+  class B extends A{
+
+  }
+class C extends B{
+
+}
+Multiple Inheritance:
+
+If we extend more than one class at a time is called multiple inheritance.
+
+Example:
+
+class C extends A,B{
+
+}
+
+Java doesn't support multiple inheritance, because
+
+
+Lets say example
+
+class A{
+ public void method1(){
+ }
+}
+
+class B{
+ public void method1(){
+ }
+}
+
+class C extends A,B{
+
+}
+
+class Main{
+public static void main(String[] args){
+C c= new C();
+c.method1();
+}
+}
+
+Java doesn't support multiple inheritance through classes but it will support through
+interfaces.
+
+Hybrid inheritance :
+
+It is a combination of two or more types of inheritance.
+
+class A{
+
+
+}
+
+class B extends A{
+
+
+}
+
+class C extends A{
+
+}
+
+class D extends B{
+
+}
+
+         A
+         |
+     ----------
+     |         |
+     B         C
+     |
+     D
+
+Hierarchical inheritance:
+
+only one parent and it is having multiple child classes.
+
+      A
+      |
+ ------------
+ |    |     |
+ B    C     D
+
+
+ class A{
+
+ }
+class B extends A{
+
+}
+
+class C extends A{
+
+}
+
+class D extends A{
+
+}
